@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Media Query</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            display: flex;
+        }
+        .box {
+            background-color: aqua;
+            border: 2px solid black;
+            height: 100px;
+            width: 110px;
+            margin: 10px;
+
+        }
+    /* @media only screen and (min-width:400px){
+        p{
+            color: greenyellow;
+        }
+    } */
+    @media (min-width:200px) and (max-width:300px){
+        p {
+            background-color: aqua;
+        }
+        
+    }
+   
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ducimus hic, est modi iste optio eveniet fugit aut eligendi repellendus id laboriosam molestiae sint facilis, quibusdam officiis alias aliquid! Non.
+    Nam rem praesentium quo, sed, maxime facere et cumque impedit excepturi debitis possimus libero. Eligendi nemo ipsam perferendis consequuntur facere nihil iusto impedit, velit nesciunt accusantium. Laboriosam qui deleniti autem!</p>
+    
+</body>
+</html>

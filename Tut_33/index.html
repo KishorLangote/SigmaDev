@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise -4 - On variables</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: rgb(209, 226, 114);
+        }
+
+        :root{
+            --color:purple;
+            --seccolor: orange;
+            --threecolor:grey;
+            --fourcolor:rgb(214, 98, 117);
+
+        }
+
+        ul {
+            display: flex;
+            background-color: greenyellow;
+        }
+
+        ul li {
+            margin: 30px;
+            padding: 5px;
+           
+        }
+
+        .first{
+            background-color: var(--color);
+        }
+       
+        .second{
+            background-color: var(--seccolor);
+        }
+
+        .three{
+            background-color: var(--threecolor);
+        }
+
+        .four{
+            background-color: var(--fourcolor);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li class="first">Home</li>
+            <li class="second">About</li>
+            <li class="three">Contact</li>
+            <li class="four">Mission</li>
+        </ul>
+    </div>
+</body>
+</html>
