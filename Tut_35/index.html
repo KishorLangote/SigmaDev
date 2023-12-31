@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise 5 - Design this Layout</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            border: 2px solid black;
+            margin: 5px;
+            padding: 5px;
+            background-color: rgb(207, 198, 198);
+        }
+        .internal-first {
+            background-color: aquamarine;
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        .internal-second {
+            background-color: rgb(236, 224, 113);
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+        }
+        .container {
+            display: flex;
+        }
+        
+        nav {
+            position: sticky;
+            top: 0;
+        }
+        .navbar {
+           
+            background-color: rgb(107, 65, 232);
+            border: 1px solid black;
+            margin: 5px;
+            padding: 5px;
+           
+           
+        }
+
+        ul {
+            display: flex;
+            justify-content: space-evenly;
+            
+        }
+        ul li {
+            list-style: none;
+            color: white;   
+        }
+        
+        .massege {
+           
+            border: 1px solid black;
+            border-radius: 10px;
+            height: 19px;
+            /* width: 350px; */
+            margin: 10px;
+            padding: 18px;
+            text-align: center;
+            font-size: 20px;
+            background-color: rgb(19, 21, 21);
+            color: white;
+        }
+        .orange-box{
+           
+            height: 10px;
+            width: 10px;
+            background-color: orange;
+            position: fixed;
+            right: 10px;
+            bottom: 70px;
+            border-radius: 50px;
+
+        
+        }
+
+        footer {
+            text-align: center;
+            background-color: rgb(196, 182, 182);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                    <li>Our Projects</li>
+                </ul>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="internal-first">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam repellat ad quidem numquam? Saepe molestiae ut excepturi tenetur provident at exercitationem ex aspernatur error labore, non, itaque ipsum natus consequuntur?
+                Accusamus distinctio vero exercitationem nihil aut enim magni beatae error asperiores. Consequuntur voluptates odio perspiciatis quasi temporibus illum assumenda, ex fuga molestiae, itaque voluptate cupiditate ipsa deleniti praesentium iste quidem!
+                Alias voluptatibus veritatis corporis perspiciatis mollitia officia quaerat dolores tempora quas distinctio, minima consectetur nobis eos? Explicabo cum veritatis ab, laboriosam deserunt repellendus minus sunt error et nam fugit eveniet!
+                Explicabo doloremque quod doloribus, laborum ex nemo deleniti earum molestias nesciunt. Eos inventore quasi cum ab! Corrupti ea dolore modi delectus quas suscipit soluta deleniti earum excepturi. Consequatur, eligendi eius?</p>
+            </div>
+            <div class="internal-second">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione reprehenderit dolore dicta perferendis incidunt, quis quam laboriosam, ullam, deleniti tempora cupiditate mollitia! Qui assumenda magnam ipsa laborum totam quo nostrum?
+                Harum expedita consequatur doloribus fugit magnam recusandae. Velit, veniam. Asperiores, accusantium? Commodi debitis eligendi tempora enim. Adipisci vero consequuntur dolorum accusamus, reiciendis autem delectus perspiciatis dignissimos! Molestias cupiditate aliquid soluta?
+                Ipsam ab laboriosam inventore consectetur rem eaque deleniti iste accusamus modi. Impedit unde nobis dolore voluptas animi eos quod? Nihil eum inventore amet et recusandae. Itaque temporibus obcaecati unde cum.
+                Delectus officiis rerum reprehenderit non odio, facere officia ratione itaque neque et quos a, magni placeat maiores quis obcaecati beatae soluta quo? Nulla odio eligendi magnam praesentium dicta natus quasi.</p>
+            </div>
+        </div>
+        
+        <div class="massege">
+            <span>Welcome to the Sigma Web Development</span>
+        </div>
+        <div class="orange-box">
+            
+        </div>
+    </div>
+    <footer>&copy; Copyright Free Breathing | 2023 |</footer>
+</body>
+</html>

@@ -1,0 +1,63 @@
+.container{
+    height: 250px;
+    width: 1500px;
+    background-color: black;
+    position: relative;
+}
+
+.box-red{
+    height: 55px;
+    width: 55px;
+    background-color: red;
+    border-radius: 70px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    animation: AnimationX 6s linear infinite, AnimationY 1s ease-in-out infinite alternate-reverse; 
+}
+
+.box-green{
+    height: 55px;
+    width: 55px;
+    background-color: rgb(52, 214, 158);
+    border-radius: 70px;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    animation: animationX  6s linear infinite, animationY 2s ease-in-out infinite backwards; }
+
+@keyframes AnimationX {
+    from{
+        left: 0%;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+@keyframes AnimationY {
+    from{
+        bottom: 0%;
+    }
+    to{
+        bottom: 70%;
+    }
+    }
+
+    @keyframes animationX {
+        from{
+            left: 0%;
+        }
+        to{
+            left: 100%;
+        }
+    }
+    
+    @keyframes animationY {
+        from{
+            bottom: 100%;
+        }
+        to{
+            bottom: 0%;
+        }
+        }

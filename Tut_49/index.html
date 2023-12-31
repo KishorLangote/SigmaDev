@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit/cover property</title>
+    <style>
+        .container{
+            height: 230px;
+            width: 200px;
+            border: 2px solid black;
+            background-color: aquamarine;
+        }
+        img{
+            height: 230px;
+            width: 200px;
+            object-fit: cover;
+            /* object-fit:contain; */
+            /* object-fit: fill; */
+            /* object-fit: scale-down; */
+            object-position:bottom right;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://imgs.search.brave.com/0L0Q6gHHLgY0fjMxcR35cKedIMjJDqoJdS8mgKTaJXo/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudW5zcGxhc2gu/Y29tL3Bob3RvLTE1/ODY0MDcwMTQxNzYt/YjU5MmQ2ZTJkMTZi/P3E9ODAmdz0xMDAw/JmF1dG89Zm9ybWF0/JmZpdD1jcm9wJml4/bGliPXJiLTQuMC4z/Jml4aWQ9TTN3eE1q/QTNmREI4TUh4elpX/RnlZMmg4TVRKOGZH/NWhkSFZ5WVd4OFpX/NThNSHg4TUh4OGZE/QT0.jpeg" alt="butterfly image">
+    </div>
+</body>
+</html>

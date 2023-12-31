@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Trasition Property</title>
+    <style>
+        .container{
+            background-color: rgb(211, 146, 60);
+            width: 350px;
+            height: 200px;
+            border: 2px solid black;
+        }
+        .box{
+            background-color: rgb(222, 44, 145);
+            width: 30px;
+            height: 30px;
+            border: 2px solid black;
+            border-radius: 50px;
+            text-align: center;
+            /* transition-property:transform;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+            /* use shortcut */
+            transition: transfrom 3s ease-in 1s;
+
+        }
+        .translate{
+            transform: translateX(20vw) translateY(15vw);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box translate">box</div>
+    </div>
+</body>
+</html>
