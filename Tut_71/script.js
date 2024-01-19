@@ -9,18 +9,21 @@
 
 
 
-let div = document.createElement("div");
-div.innerHTML = "I am div";
-document.querySelector(".box").append(div);
-let p = document.createElement("p");
-p.innerHTML = " Hi i am para";
-div.appendChild(p);
+// let div = document.createElement("div");
+// div.innerHTML = "I am div";
+// document.querySelector(".box").append(div);
+// let p = document.createElement("p");
+// p.innerHTML = " Hi i am para";
+// div.appendChild(p);
 
-let span = document.createElement("span");
-span.innerHTML = " Hi I am a span"
+// let span = document.createElement("span");
+// span.innerHTML = " Hi I am a span"
 
-p.replaceWith(span);
+// p.replaceWith(span);
 // div.replaceWith(p);
+let cont = document.querySelector(".container");
+cont.insertAdjacentHTML("afterend", "<p> Hello </p>");
+
 
 
 
