@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+
+</head>
+
+<body>
+    <div class="container"> container
+        <section class="childContainer"> child container
+            <div class="child">
+                Hey i am child!
+            </div>
+        </section>
+    </div>
+
+    <script>
+        let childClick = document.querySelector(".child")
+        childClick.addEventListener("click", (e) => {
+            alert("Hey i am child");
+            e.stopPropagation();
+        })
+        let childConClick = document.querySelector(".childContainer")
+        childConClick.addEventListener("keydown", (e) => {
+            alert("Hey i am child container");
+            e.stopPropagation();
+
+        })
+        let containerClick = document.querySelector(".container")
+        containerClick.addEventListener("click", () => {
+            alert("Hey i am container");
+        })
+
+
+
+        let boxes = document.getElementsByClassName("box"); // both are correct
+        // let boxes = document.querySelector(".container").children;
+        console.log(boxes);
+
+
+        // Function : 
+        function getRandomColor() {
+            let val1 = Math.ceil(0 + Math.random() * 255);
+            let val2 = Math.ceil(0 + Math.random() * 255);
+            let val3 = Math.ceil(0 + Math.random() * 255);
+            return `rgb(${val1}, ${val2}, ${val3})`
+        }
+
+
+        // Arrow function :
+        Array.from(boxes).forEach(e => {
+            e.style.backgroundColor = getRandomColor();
+            e.style.color = getRandomColor();
+        })
+
+        // let a = setInterval(() => {
+        //   document.querySelector(".container").style.backgroundColor = getRandomColor();
+        // }, 1000);
+        // console.log(a);
+        
+
+        let a = setTimeout(() => {
+          document.querySelector(".container").style.backgroundColor = getRandomColor();
+        }, 2000);
+
+    </script>
+</body>
+
+</html>
